@@ -1,4 +1,4 @@
-{% set version = "0.1.5" %}
+{% set version = "0.2.0" %}
 
 package:
   name: nctoolkit 
@@ -10,7 +10,7 @@ source:
 
 build:
   number: 1
-  skip: True  # [not linux]
+  skip: True  # [windows]
   script: {{ PYTHON }} -m pip install . -vv 
 
 
