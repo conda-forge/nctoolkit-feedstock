@@ -1,4 +1,4 @@
-{% set version = "0.2.0" %}
+{% set version = "0.2.1" %}
 
 package:
   name: nctoolkit
@@ -6,10 +6,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/n/nctoolkit/nctoolkit-{{ version }}.tar.gz
-  sha256: 2fd50ddc4f22fc30498ef710e54af11686dce793ae86fb4f5e84b90d7e194d84
+  sha256: bcd9e21f8c885c90d5937980a4714255d2fc550fd2fa02158ead9ee75ba4518a
 
 build:
-  number: 2
+  number: 0
+  skip: True  # [windows]
   script: {{ PYTHON }} -m pip install . -vv 
 
 requirements:
@@ -34,10 +35,10 @@ test:
     - nctoolkit
 
 about:
-  home: https://github.com/r4ecology/nctoolkit
+  home: https://nctoolkit.readthedocs.io/en/stable 
   license: GPL-3.0-only
   license_file: LICENSE
-  summary: Powerful Python tools for processing, analysing and visualizing NetCDF data
+  summary: Fast and easy analysis of netCDF data in Python 
 
 
 extra:
