@@ -9,8 +9,9 @@ source:
   sha256: bcd9e21f8c885c90d5937980a4714255d2fc550fd2fa02158ead9ee75ba4518a
 
 build:
-  number: 0
-  skip: True  # [windows]
+  noarch: python
+  number: 1
+#  skip: True  # [windows]
   script: {{ PYTHON }} -m pip install . -vv 
 
 requirements:
