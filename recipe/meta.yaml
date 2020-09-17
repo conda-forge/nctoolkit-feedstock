@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/n/nctoolkit/nctoolkit-{{ version }}.tar.gz
-  sha256: 2fd50ddc4f22fc30498ef710e54af11686dce793ae86fb4f5e84b90d7e194d84
+  sha256: bcd9e21f8c885c90d5937980a4714255d2fc550fd2fa02158ead9ee75ba4518a
 
 build:
   number: 0
