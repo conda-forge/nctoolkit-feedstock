@@ -13,6 +13,9 @@ build:
   skip: True  # [windows]
   script: {{ PYTHON }} -m pip install . -vv 
 
+build_platform:
+  osx_64: linux_64
+
 requirements:
 
   host:
