@@ -27,7 +27,7 @@ requirements:
     - panel
     - netCDF4
     - hvplot
-    - cdo # [not win]
+    - cdo  # [not win]
     - nco
 
 test:
