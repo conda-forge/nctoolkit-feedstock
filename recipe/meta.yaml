@@ -27,7 +27,8 @@ requirements:
     - panel
     - netCDF4
     - hvplot
-    - cdo  # [not win]
+    - eccodes <= 2.18.0
+    - cdo # [not win]
     - nco
 
 test:
