@@ -28,7 +28,6 @@ requirements:
     - netCDF4
     - hvplot
     - cdo # [not win]
-    - eccodes ==2.19.0
     - nco
 
 test:
