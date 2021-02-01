@@ -9,7 +9,7 @@ source:
   sha256: 6755f07aec891632fa19497dc1fef457a66f0ae626a28790d2f9dbe50349e3be
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv 
 
 
@@ -27,7 +27,7 @@ requirements:
     - panel
     - netCDF4
     - hvplot
-    - eccodes <=2.18.0
+    - eccodes
     - cdo  # [not win]
     - nco
     - ncplot
