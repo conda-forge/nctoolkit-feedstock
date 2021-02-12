@@ -38,7 +38,6 @@ about:
   license_file: LICENSE
   summary: Fast and easy analysis of netCDF data in Python 
 
-
 extra:
   recipe-maintainers:
     - r4ecology
