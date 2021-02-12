@@ -22,7 +22,8 @@ requirements:
 
   run:
     - python
-    - xarray
+    - xarray >=0.14.0
+    - dill
     - netCDF4
     - cdo  # [not win]
     - nco
@@ -37,7 +38,6 @@ about:
   license: GPL-3.0-only
   license_file: LICENSE
   summary: Fast and easy analysis of netCDF data in Python 
-
 
 extra:
   recipe-maintainers:
