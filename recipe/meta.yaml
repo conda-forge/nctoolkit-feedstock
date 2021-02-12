@@ -23,6 +23,7 @@ requirements:
   run:
     - python
     - xarray >=0.14.0
+    - dill
     - netCDF4
     - cdo  # [not win]
     - nco
