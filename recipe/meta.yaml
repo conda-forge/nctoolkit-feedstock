@@ -1,4 +1,4 @@
-{% set version = "0.3.0" %}
+{% set version = "0.3.1" %}
 
 package:
   name: nctoolkit
@@ -6,11 +6,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/n/nctoolkit/nctoolkit-{{ version }}.tar.gz
-  sha256: 0544534d8f29f18fa99616a0961d85c2c8205ef0bbe4ddd8550d41c737665c7b
+  sha256: 6f92e1e3d3cc8c87f2ecc21a214ec8f5f801433f7c990ef673e888f79eecfde7
 
 build:
   number: 0
-  script: {{ PYTHON }} -m pip install . -vv 
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
 
@@ -34,10 +34,10 @@ test:
     - nctoolkit
 
 about:
-  home: https://nctoolkit.readthedocs.io/en/stable 
+  home: https://nctoolkit.readthedocs.io/en/stable
   license: GPL-3.0-only
   license_file: LICENSE
-  summary: Fast and easy analysis of netCDF data in Python 
+  summary: Fast and easy analysis of netCDF data in Python
 
 extra:
   recipe-maintainers:
