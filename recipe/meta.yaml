@@ -1,4 +1,4 @@
-{% set version = "0.3.6" %}
+{% set version = "0.3.7" %}
 
 package:
   name: nctoolkit
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/n/nctoolkit/nctoolkit-{{ version }}.tar.gz
-  sha256: 8d063d5d3e74506421dd07bf927623131e3f48e343cfca75380164060eed3eec
+  sha256: 6300f2c13ad016d912e5dddbdaa58d729e82240cc054c614f415c772cac56638
 
 build:
   number: 0
