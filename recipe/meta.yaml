@@ -1,4 +1,4 @@
-{% set version = "0.3.8" %}
+{% set version = "0.3.9" %}
 
 package:
   name: nctoolkit
@@ -6,11 +6,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/n/nctoolkit/nctoolkit-{{ version }}.tar.gz
-  sha256: fe6fe4ad8652582f2310a1ee0b30ebb7d40b426125429f9117393f46bcd78c27
+  sha256: fd8d24455caee7cae82b27554f071c46ded64a48351fc45e9a3ec343d7910cbc
 
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -23,7 +23,7 @@ requirements:
 
   run:
     - python
-    - xarray >=0.14.0
+    - xarray 
     - dill
     - netCDF4
     - cdo  # [not win]
