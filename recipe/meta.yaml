@@ -10,7 +10,7 @@ source:
 
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -26,7 +26,7 @@ requirements:
     - xarray 
     - dill
     - netCDF4
-    - cdo  # [not win]
+    - cdo <2.0.0 # [not win]
     - nco
     - ncplot
 
