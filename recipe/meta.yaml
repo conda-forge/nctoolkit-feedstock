@@ -28,7 +28,7 @@ requirements:
     - netCDF4
     - cdo <2.0.0 # [not win]
     - nco
-    - ncplot
+    - ncplot >0.0.4
 
 test:
   imports:
