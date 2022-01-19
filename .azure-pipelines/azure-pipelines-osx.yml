@@ -17,7 +17,7 @@ jobs:
       osx_64_python3.9.____cpython:
         CONFIG: osx_64_python3.9.____cpython
         UPLOAD_PACKAGES: 'True'
-  timeoutInMinutes: 1000
+  timeoutInMinutes: 360
 
   steps:
   # TODO: Fast finish on azure pipelines?
