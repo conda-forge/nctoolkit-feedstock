@@ -10,7 +10,8 @@ source:
 
 
 build:
-  number: 0
+  number: 1
+  skip: True  # [win]
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -29,7 +30,7 @@ requirements:
     - netCDF4
     - cdo !=2.0.0,!=2.0.2,!=2.0.3,!=2.0.4 # [not win]
     - nco
-    - ncplot >0.0.4
+    - ncplot >0.1.0
 
 test:
   imports:
