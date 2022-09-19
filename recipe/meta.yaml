@@ -31,7 +31,7 @@ requirements:
     - cdo !=2.0.0,!=2.0.2,!=2.0.3,!=2.0.4 # [not win]
     - nco
     - ncplot >0.1.0
-    - matplotlib<3.6.0
+    - matplotlib <3.6.0
 
 test:
   imports:
