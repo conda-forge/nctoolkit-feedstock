@@ -1,4 +1,4 @@
-{% set version = "0.7.3" %}
+{% set version = "0.7.4" %}
 
 package:
   name: nctoolkit
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/n/nctoolkit/nctoolkit-{{ version }}.tar.gz
-  sha256: 841c272ec451fe7344c06b695b3f00b54bb02dd7966ce4cc0a983fc15b4eabae
+  sha256: dc8f936dd3f3be11c765f015e29572411ba2807bb3be592c243695047330cbfd
 
 
 build:
@@ -28,9 +28,10 @@ requirements:
     - dill
     - plotnine
     - netCDF4
-    - cdo !=2.0.0,!=2.0.2,!=2.0.3,!=2.0.4 # [not win]
+    - cdo  !=2.0.0,!=2.0.2,!=2.0.3,!=2.0.4 # [not win]
     - nco
-    - ncplot >0.1.0
+    - ncplot  >0.1.0
+    - matplotlib-base  <3.6.0
 
 test:
   imports:
@@ -44,4 +45,4 @@ about:
 
 extra:
   recipe-maintainers:
-    - r4ecology
+    - robertjwilson
