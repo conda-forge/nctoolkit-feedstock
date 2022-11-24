@@ -10,7 +10,7 @@ source:
 
 
 build:
-  number: 1
+  number: 2
   skip: true  # [win]
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -29,10 +29,11 @@ requirements:
     - plotnine
     - netCDF4
     - cdo  !=2.0.0,!=2.0.2,!=2.0.3,!=2.0.4 # [not win]
-    - ipykernel  <6.18.0
+    - ipykernel  <=6.9.1
     - nco
     - ncplot  >0.1.0
     - matplotlib-base  <3.6.0
+    - geoviews  >=1.9.4
 
 test:
   imports:
