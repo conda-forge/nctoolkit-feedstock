@@ -10,7 +10,7 @@ source:
 
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -29,6 +29,7 @@ requirements:
     - plotnine
     - netCDF4
     - cdo  !=2.0.0,!=2.0.2,!=2.0.3,!=2.0.4 # [not win]
+    - ipykernel  <6.18.0
     - nco
     - ncplot  >0.1.0
     - matplotlib-base  <3.6.0
