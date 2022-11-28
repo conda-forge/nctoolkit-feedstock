@@ -31,7 +31,7 @@ requirements:
     - cdo  !=2.0.0,!=2.0.2,!=2.0.3,!=2.0.4 # [not win]
     - ipykernel  <=6.9.1
     - nco
-    - ncplot  >0.1.0
+    - ncplot  >=0.2.8
     - matplotlib-base  <3.6.0
     - geoviews  >=1.9.4
 
