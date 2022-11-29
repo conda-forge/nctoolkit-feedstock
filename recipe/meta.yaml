@@ -10,7 +10,7 @@ source:
 
 
 build:
-  number: 1
+  number: 2
   skip: true  # [win]
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -32,6 +32,7 @@ requirements:
     - ipykernel  <=6.9.1
     - nco
     - ncplot  >=0.2.8
+    - hvplot <=0.8.1
     - matplotlib-base  <3.6.0
     - geoviews  >=1.9.4
 
