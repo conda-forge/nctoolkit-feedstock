@@ -29,7 +29,7 @@ requirements:
     - netCDF4
     - cdo  !=2.0.0,!=2.0.2,!=2.0.3,!=2.0.4 # [not win]
     - nco
-    - datashader # [python <3.11]
+    - datashader # [py<311]
     - ncplot  >=0.2.8
 
 
