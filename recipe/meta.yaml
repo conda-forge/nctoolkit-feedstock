@@ -10,7 +10,7 @@ source:
 
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -24,9 +24,7 @@ requirements:
 
   run:
     - python
-    - xarray
     - dill
-    - netCDF4
     - cdo  !=2.0.0,!=2.0.2,!=2.0.3,!=2.0.4 # [not win]
     - nco
     - datashader # [py<311]
