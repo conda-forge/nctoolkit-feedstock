@@ -10,7 +10,7 @@ source:
 
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -30,6 +30,7 @@ requirements:
     - datashader # [py<311]
     - multiprocess
     - ncplot  >=0.2.8
+    - jupyter_bokeh
 
 
 test:
