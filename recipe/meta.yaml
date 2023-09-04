@@ -29,7 +29,7 @@ requirements:
     - nco
     - datashader # [py<311]
     - multiprocess
-    - ncplot  >=0.3.6
+    - ncplot >=0.3.6
     - jupyter_bokeh >=3.0.7
 
 
