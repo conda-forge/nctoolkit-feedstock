@@ -10,7 +10,7 @@ source:
 
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -25,7 +25,7 @@ requirements:
   run:
     - python
     - dill
-    - cdo  >=2.0.5 # [not win]
+    - cdo  !=2.4.1 # [not win]
     - nco
     - datashader # [py<311]
     - multiprocess # [osx]
