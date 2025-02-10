@@ -1,4 +1,6 @@
 {% set version = "1.2.0" %}
+{% set python_min = "3.10" %}
+
 
 package:
   name: nctoolkit
@@ -10,20 +12,20 @@ source:
 
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
 
   host:
-    - python
+    - python {{ python_min }}
     - pip
     - setuptools_scm
     - setuptools-git
 
   run:
-    - python
+    - python {{ python_min }}
     - dill
     - cdo  !=2.4.1 # [not win]
     - nco
