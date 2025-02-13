@@ -12,20 +12,20 @@ source:
 
 
 build:
-  number: 3
+  number: 4
   skip: true  # [win]
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
 
   host:
-    - python >={{ python_min }}
+    - python >=3.10
     - pip
     - setuptools_scm
     - setuptools-git
 
   run:
-    - python >={{ python_min }}
+    - python
     - dill
     - cdo  !=2.4.1 # [not win]
     - nco
