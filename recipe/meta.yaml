@@ -19,7 +19,7 @@ build:
 requirements:
 
   host:
-    - python >=3.10
+    - python
     - pip
     - setuptools_scm
     - setuptools-git
@@ -30,7 +30,7 @@ requirements:
     - dill
     - cdo  !=2.4.1 # [not win]
     - nco
-    - datashader # [py<311]
+    - datashader
     - multiprocess # [osx]
     - ncplot >=0.3.6
     - jupyter_bokeh >=3.0.7
