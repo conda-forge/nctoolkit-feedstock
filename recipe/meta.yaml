@@ -1,4 +1,4 @@
-{% set version = "1.2.3" %}
+{% set version = "1.2.4" %}
 {% set python_min = "3.10" %}
 
 
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/n/nctoolkit/nctoolkit-{{ version }}.tar.gz
-  sha256: 8ce51066e224242273e160a005b24d3b333c24620936712e01eda3f10bf02064
+  sha256: 85b50605f768abcd263e50e467d1a43f7c7204b752b55532373c321ae5a9dbcf
 
 
 build:
@@ -19,17 +19,18 @@ build:
 requirements:
 
   host:
-    - python >=3.10
+    - python
     - pip
     - setuptools_scm
     - setuptools-git
+    - setuptools
 
   run:
     - python
     - dill
     - cdo  !=2.4.1 # [not win]
     - nco
-    - datashader # [py<311]
+    - datashader
     - multiprocess # [osx]
     - ncplot >=0.3.6
     - jupyter_bokeh >=3.0.7
