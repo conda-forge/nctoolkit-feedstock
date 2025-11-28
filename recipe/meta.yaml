@@ -23,6 +23,7 @@ requirements:
     - pip
     - setuptools_scm
     - setuptools-git
+    - setuptools
 
   run:
     - python
