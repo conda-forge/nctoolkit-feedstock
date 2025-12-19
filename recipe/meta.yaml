@@ -1,4 +1,4 @@
-{% set version = "1.2.5" %}
+{% set version = "1.2.6" %}
 {% set python_min = "3.10" %}
 
 
@@ -8,11 +8,11 @@ package:
 
 source:
   url: https://pypi.org/packages/source/n/nctoolkit/nctoolkit-{{ version }}.tar.gz
-  sha256: 5d9accaad7b15f1c5eac744cd601424c7278e759f99ee8a2677e80f428644ef7
+  sha256: 974d1b50c7e58c5cda1da079fd4feff61862845d0bf581005cd6527cf6697ff8
 
 
 build:
-  number: 1
+  number: 0
   skip: true  # [win]
   script: {{ PYTHON }} -m pip install . -vv
 
