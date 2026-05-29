@@ -28,7 +28,7 @@ requirements:
   run:
     - python
     - dill
-    - cdo  !=2.4.1 # [not win]
+    - cdo  <2.6.1 # [not win]
     - nco
     - datashader
     - multiprocess # [osx]
