@@ -12,7 +12,7 @@ source:
 
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -42,7 +42,7 @@ test:
     - nctoolkit
 
 about:
-  home: https://nctoolkit.readthedocs.io/en/stable
+  home: https://pmlmodelling.github.io/nctoolkit/
   license: GPL-3.0-only
   license_file: LICENSE
   summary: Fast and easy analysis of netCDF data in Python
