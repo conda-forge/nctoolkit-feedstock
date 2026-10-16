@@ -27,6 +27,7 @@ requirements:
     - cdo <2.6.1
     - nco
     - datashader
+    - multiprocess
     - ncplot >=0.3.6
     - jupyter_bokeh >=3.0.7
     - geoviews <=1.14.0
