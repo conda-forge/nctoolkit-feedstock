@@ -24,7 +24,7 @@ requirements:
   run:
     - python >={{ python_min }}
     - dill
-    - cdo <2.6.1
+    - cdo
     - nco
     - libgdal-netcdf
     - datashader
