@@ -10,7 +10,7 @@ source:
   sha256: ec966dc475d0445bb2115a411d38ee0654e86187b730ebcc72078eb6b4fe265e
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
@@ -26,6 +26,7 @@ requirements:
     - dill
     - cdo <2.6.1
     - nco
+    - libgdal-netcdf
     - datashader
     - multiprocess
     - ncplot >=0.3.6
