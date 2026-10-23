@@ -1,4 +1,4 @@
-{% set version = "1.3.9" %}
+{% set version = "1.3.10" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/n/nctoolkit/nctoolkit-{{ version }}.tar.gz
-  sha256: 2001411f645d134ca436a9b2f3c3a716abb89e6fd51ab349e96bb5a0305f7c99
+  sha256: b3b5f7771f737577f9632722c1177e70b7dedd19eab6d0353c67c63bc60dcc55
 
 build:
   number: 0
