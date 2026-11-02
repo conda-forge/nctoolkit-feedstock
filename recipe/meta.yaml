@@ -10,7 +10,7 @@ source:
   sha256: 78e6556d37b834623446653f606bc175f4fa3b1f6ac2219bbbe729b7ddb50c3f
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
@@ -43,7 +43,7 @@ test:
     - pip check
 
 about:
-  home: https://pmlmodelling.github.io/nctoolkit/
+  home: https://plymouthmarinelaboratory.github.io/nctoolkit/
   license: GPL-3.0-only
   license_file: LICENSE
   summary: Fast and easy analysis of netCDF data in Python
